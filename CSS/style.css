@@ -1,0 +1,168 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font: 800 14px "Cairo", sans-serif;
+    color: #eee;
+    text-transform: capitalize;
+    box-sizing: border-box
+}
+
+a {text-decoration: none}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    text-align: center;
+    background-color: #0075ff
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+article {
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden
+}
+
+article iframe {
+    display: block;
+    width: 100%;
+    min-height: 50vh;
+    margin: auto auto auto -7px;
+    transform: scale(-0.8);
+    -webkit-transform: scale(-1.1);
+    -moz-transform: scale(-1.1);
+    -ms-transform: scale(-1.1);
+    -o-transform: scale(-1.1);
+}
+
+article p {
+    font-size: 1em;
+    font-weight: normal
+}
+
+article p.ar {direction: rtl}
+
+article button {
+    padding: 4px;
+    color: #333;
+    width: 35%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: none;
+    border: none
+}
+
+article button:hover {
+    outline: 1px;
+    border: 1px gray solid
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 7vh
+}
+
+footer .social-buttom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center
+}
+
+footer .social-buttom p { 
+    font-size: 14px;
+    text-align: center;
+    width: 30%
+}
+
+footer .social-buttom .icons {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 200px;
+    justify-content: center;
+    align-items: center
+}
+
+footer .social-buttom .icons i .fab {
+    display: flex;
+    margin-left: 4px;
+    font-size: 14px
+}
+
+footer .mylogo{
+    font-family: Playfair Display;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {font-size: 14px}
+    article button {width: 35%}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    body {font-size: 16px}
+    article button {width: 30%}
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {font-size: 18px}
+    article button {width: 20%}
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+/* Extra - Large devices (extre - large desktops, 1900px and up) */
+@media (min-width: 1900px) {
+    body {font-size: 30px}
+    article button {width: 20%}
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center
+    }
+}
